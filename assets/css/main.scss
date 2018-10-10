@@ -5,6 +5,11 @@
 @import "variables";
 @import "bulma";
 @import "extensions/checkradio";
+@import 'home';
+@import 'mapbox';
+@import 'shelter-map';
+@import 'pod';
+@import 'navbar';
 
 main {
   margin: 3em 0;

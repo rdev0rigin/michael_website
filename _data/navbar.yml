@@ -1,0 +1,10 @@
+widenav:
+  - title: Main
+    url: /
+  - title: Shelters
+    url: /shelters-map/
+mobilenav:
+  - title: Main
+    url: /
+  - title: Shelters
+    url: /shelters-map/
