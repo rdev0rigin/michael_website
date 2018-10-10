@@ -1,0 +1,128 @@
+/**
+    Responsive
+*/
+@media only screen and (max-width: 740px) {
+  ul.cards-list {
+    flex-direction: column;
+  }
+
+  .gallery-container {
+    justify-content: center;
+  }
+}
+/**
+    /Responsive
+*/
+/**
+    Card Items
+ */
+.news-card {
+  position: relative;
+  min-width: 300px;
+  max-width: 300px;
+  border-radius: 15px;
+  height: 400px;
+  padding: 15px;
+  overflow: hidden;
+  border: transparent solid 5px;
+  background: none;
+
+  a, a:hover, a:visited, a:link {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.news-card-outer {
+  position: relative;
+  padding: 0;
+  margin: 0 20px 20px 20px;
+  border-radius: 5px;
+}
+.news-card-outer:hover {
+  transition: all 0.1s linear;
+  box-shadow: inset 0 0 0 9px rgba(26, 26, 26, 0.7);
+}
+
+img.news-card-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 222px;
+  min-height: 222px;
+  //min-height: 222px;
+}
+
+.news-card-body {
+  position: absolute;
+  top: 222px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 16px 4px 16px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  background: #2e3440;
+}
+
+.news-card-title {
+  color: rgba(237, 237, 237, 0.44);
+  font-size: 1.3em;
+  line-height: 1.1em;
+  margin-bottom: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-height: 28px;
+}
+
+.news-card-description {
+  font-size: 14px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+}
+
+.news-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-rendering: optimizeLegibility;
+  padding: 0;
+}
+
+/**
+    / news-card Items
+ */
+ul.news-cards-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: antiquewhite;
+  padding: 41px 0;
+}
+
+.gallery-container {
+  min-height: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.gallery-title {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.gallery-display-box {
+  display: flex;
+  min-width: 100vw;
+  flex-direction: column;
+  justify-content: flex-start;
+}

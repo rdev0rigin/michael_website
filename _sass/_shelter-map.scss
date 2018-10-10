@@ -27,7 +27,7 @@ $map-height: 90vh;
 }
 
 #map-container.shelter-map_container #map {
-  min-height: $map-height;
+  min-height: 100%;
   max-height: $map-height;
 }
 

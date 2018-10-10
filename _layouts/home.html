@@ -41,43 +41,48 @@
         </div>
     </section>
     <main role="main">
-        <section class="section">
-            <div class="container">
-                <div class="columns">
-                    <div class="column notification-links">
-                        <p class="content has-text-centered">
-                            <a class="has-text-weight-bold is-size-3"
-                               href="https://www.fema.gov/news-release/2018/09/16/how-you-can-help-disaster-survivors">How
-                                to Help
-                            </a>
-                        </p>
-                    </div>
-                    <div class="column">
-                        <p class="content has-text-centered">
-                            <a class="has-text-weight-bold is-size-3" href="https://www.fema.gov/florence-rumors">Hurricane
-                                Florence Rumor Control
-                            </a>
-                        </p>
-                    </div>
-                    <div class="column">
-                        <p class="content has-text-centered">
-                            <a class="has-text-weight-bold is-size-3"
-                               href="https://www.us-cert.gov/ncas/current-activity/2018/09/14/Potential-Hurricane-Florence-Phishing-Scams">Potential
-                                Hurricane Florence Phishing Scams
-                            </a>
-                        </p>
-                    </div>
-                    <div class="column">
-                        <p class="content has-text-centered">
-                            <a class="has-text-weight-bold is-size-3"
-                               href="https://www.newsobserver.com/news/local/article218334165.html">
-                                ICE won’t arrest or detain evacuees
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <ul class="news-cards-list">
+            {% for feed in page.newsfeed %}
+                {% include card.html title=feed.title description=feed.description imgSrc=feed.imgSrc url=feed.url %}
+            {% endfor %}
+        </ul>
+        <!--<section class="section">-->
+            <!--<div class="container">-->
+                <!--<div class="columns">-->
+                    <!--<div class="column notification-links">-->
+                        <!--<p class="content has-text-centered">-->
+                            <!--<a class="has-text-weight-bold is-size-3"-->
+                               <!--href="https://www.fema.gov/news-release/2018/09/16/how-you-can-help-disaster-survivors">-->
+                                <!--How to Help-->
+                            <!--</a>-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="column">-->
+                        <!--<p class="content has-text-centered">-->
+                            <!--<a class="has-text-weight-bold is-size-3" href="https://www.fema.gov/florence-rumors">Hurricane-->
+                                <!--Florence Rumor Control-->
+                            <!--</a>-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="column">-->
+                        <!--<p class="content has-text-centered">-->
+                            <!--<a class="has-text-weight-bold is-size-3"-->
+                               <!--href="https://www.us-cert.gov/ncas/current-activity/2018/09/14/Potential-Hurricane-Florence-Phishing-Scams">Potential-->
+                                <!--Hurricane Florence Phishing Scams-->
+                            <!--</a>-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="column">-->
+                        <!--<p class="content has-text-centered">-->
+                            <!--<a class="has-text-weight-bold is-size-3"-->
+                               <!--href="https://www.newsobserver.com/news/local/article218334165.html">-->
+                                <!--ICE won’t arrest or detain evacuees-->
+                            <!--</a>-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</section>-->
         <section class="section">
             <div class="container">
                 <div class="box content has-text-centered">
